@@ -100,7 +100,7 @@ function runQuery(numArticles, queryURL){
 			// Then display the remaining fields in the HTML (Title, Date, URL)
 			$("#articleWell-"+ articleCounter).append('<h5>' + allNews[j].title + "</h5>");
 			$("#articleWell-"+ articleCounter).append('<h5>' + allNews[j].publishedAt + "</h5>");
-			$("#articleWell-"+ articleCounter).append("<a href='" + allNews[j].url + "'>" + allNews[j].url + "</a>");	
+			$("#articleWell-"+ articleCounter).append("<a href='" + allNews[j].url + "' target='_blank'>" + allNews[j].url + "</a>");	
 
 		}		
 		// This line allows us to take advantage of the HTML "submit" property. This way we can hit enter on the keyboard and it registers the search (in addition to clicks).
